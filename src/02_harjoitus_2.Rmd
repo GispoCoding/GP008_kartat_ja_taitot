@@ -23,14 +23,15 @@ Aivan aluksi valitse itsellesi mieluisa fontti. Valitse myös itsellesi mieluisa
 
 
 Jos et löydä jotain välilehteä, käytä nuolia paneelin oikeassa laidassa.
+
 ![](img/harjoitus2/img2.png)
 
 
-Seuraavaksi määritellään tarkemmin nimiöiden sijoittelu. Mene Sijoittaminen-välilehdelle. Aseta tilaksi jälleen “Seuraa viivaa”, jolloin nimiö pysyy viivan mukana myös kaarroksissa. Jos haluat nimiöt teiden sisälle, aseta “Sallitut asemmoinnit” -kohtaan täppä “Viivalla”. Ota muut valinnat pois, jolloin QGIS sijoittaa nimiöt vain ja ainoastaan viivalle. Jos valitset tässä useamman vaihtoehdon, QGIS sijoittaa nimiön mihin tahansa niistä sen mukaan, mihin nimiö mahtuu.
+Seuraavaksi määritellään tarkemmin nimiöiden sijoittelu. Mene **Sijoittaminen**-välilehdelle. Aseta tilaksi jälleen “Seuraa viivaa”, jolloin nimiö pysyy viivan mukana myös kaarroksissa. Jos haluat nimiöt teiden sisälle, aseta “Sallitut asemoinnit” -kohtaan täppä “Viivalla”. Ota muut valinnat pois, jolloin QGIS sijoittaa nimiöt vain ja ainoastaan viivalle. Jos valitset tässä useamman vaihtoehdon, QGIS sijoittaa nimiön mihin tahansa niistä sen mukaan, mihin nimiö mahtuu.
 
 ![](img/harjoitus2/img3.png)
 
-Seuraavaksi asetetaan jokaiselle tielle näkymään vain yksi nimiö, eli jokaisella tiellä lukee sen nimi vain kerran. Mene “Karttanäyttö”-välilehdelle, joka on Sijoittaminen-välilehden oikealla puolella. Rullaa valikkoa alaspäin, kunnes löydät kohdan “Yhdistä kytketyt viivat välttääksesi kopioidut nimiöt”.
+Seuraavaksi asetetaan jokaiselle tielle näkymään vain yksi nimiö, eli jokaisella tiellä lukee sen nimi vain kerran. Mene **Karttanäyttö*”**-välilehdelle, joka on Sijoittaminen-välilehden oikealla puolella. Rullaa valikkoa alaspäin, kunnes löydät kohdan “Yhdistä kytketyt viivat välttääksesi kopioidut nimiöt”.
 
 ![](img/harjoitus2/img4.png)
 

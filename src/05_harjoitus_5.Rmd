@@ -14,7 +14,7 @@ Koulutettava oppii luomaan karttalehtijaon ja tekemään sen pohjalta kartta-atl
 QGIS mahdollistaa myös kartta-atlaksen tekemisen. Kartta-atlas on ns. karttakirja, jonka avulla voidaan tuottaa automatisoidusti paljon karttoja samasta teemasta. Seuraavassa esimerkissä tuotamme kartta-atlaksen Oulusta, jossa jokainen karttalehti perustuu käyttäjän itse tekemään karttalehtijakoon.
 
 
-Avaa QGISin pääikkuna. Luo uusi väliaikainen luonnostaso, jonka tyyppi on polygoni. Nimeksi voit laittaa “Karttalehtijako”. Tasolle ei tarvitse lisätä uusia kenttiä, paina vain “OK”. Taso ilmestyy nyt tasovalikkoon ja siinä on editointitila päällä. Aloita uusien polygonien piirtäminen painamalla ![](img/harjoitus5/img1.png). Piirrä eri puolille Oulua kolme suorakulmiota. Kun olet valmis, lopeta editointi klikkaamalla kynäikonia ja tallenna taso painamalla ![](img/harjoitus5/img2.png).
+Avaa QGISin pääikkuna. Luo uusi väliaikainen luonnostaso, jonka tyyppi on polygoni. Nimeksi voit laittaa “Karttalehtijako”. Tasolle ei tarvitse lisätä uusia kenttiä, paina vain **OK**. Taso ilmestyy nyt tasovalikkoon ja siinä on editointitila päällä. Aloita uusien polygonien piirtäminen painamalla ![](img/harjoitus5/img1.png). Piirrä eri puolille Oulua kolme suorakulmiota. Kun olet valmis, lopeta editointi klikkaamalla kynäikonia ja tallenna taso painamalla ![](img/harjoitus5/img2.png).
 
 
 Avaa seuraavaksi uusi taitto. Voit antaa sen nimeksi Oulu_atlas.

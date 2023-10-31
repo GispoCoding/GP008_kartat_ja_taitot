@@ -1,5 +1,5 @@
 ---
-title: "Introduction to QGIS"
+title: "Kartat ja taitot"
 author: "Gispo Ltd."
 date: "`r Sys.Date()`"
 site: "bookdown::bookdown_site"
