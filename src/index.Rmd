@@ -3,7 +3,7 @@ title: "Introduction to QGIS"
 author: "Gispo Ltd."
 date: "`r Sys.Date()`"
 site: "bookdown::bookdown_site"
-abstract: "A course covering advanced GeoServer topics."
+abstract: "QGISin visualisointikurssi"
 output:
     bookdown::html_book:
         toc: true
@@ -16,11 +16,12 @@ documentclass: book
 
 <!-- Harjoitukset -->
 
-# Template
+# Kartat ja taitot
 
 ## Tervetuloa kurssille!
 
-Kurssilla tehdään ja opitaan niitä ja näitä.
+Tämän kurssin tarkoituksena on oppia visualisoimaan aineistoja QGISillä monipuolisesti ja tehokkaasti. Kurssilla käydään läpi QGISin visualisointiominaisuuksia laajasti, jotta koulutettava pystyisi tekemään tarkoituksenmukaisia ja selkeitä karttatulosteita. Tavoitteena on ymmärtää QGISin visualisointityökalujen toimintaa ja saada rutiinia niiden käyttöön.
+
 
 ## Lukuohje
 
