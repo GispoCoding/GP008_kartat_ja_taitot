@@ -63,7 +63,7 @@ Elementin ominaisuudet -välilehdellä on useita työkaluja, jotka
 helpottavat kartan rajauksen ja mittakaavan muokkaamista:
 
 |                               |                                                                   |
-|:----------------:|:----------------------------------------------------:|
+|:-----------------------------:|:-----------------------------------------------------------------:|
 | ![](img/harjoitus4/img25.png) | Päivitä kartta (mikäli olet tehnyt muutoksia pääikkunan puolella) |
 | ![](img/harjoitus4/img24.png) |             Tuo kartan laajuus pääikkunasta taittoon              |
 | ![](img/harjoitus4/img23.png) |              Vie kartan laajuus taitosta pääikkunaan              |
