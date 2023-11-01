@@ -77,7 +77,7 @@ Kartta-atlastuloste voisi näyttää esimerkiksi tältä:
 
 ![](img/harjoitus5/img10.png)
 
-::: note-box
+::: hint-box
 Vinkki!
 Voit myös lisätä dynaamista tekstiä kartta-atlakseen.
 Luo tekstikenttä ja klikkaa sen Elementin ominaisuudet -välilehdeltä "Dynaaminen teksti" -painiketta.
