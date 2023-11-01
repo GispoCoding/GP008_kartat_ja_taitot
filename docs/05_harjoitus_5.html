@@ -96,7 +96,7 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </ul></li>
 <li><a href="02_harjoitus_2.html#lisätehtävä-luodaan-nimiö-merikoskelle"><span class="toc-section-number">3.4</span> Lisätehtävä: luodaan nimiö Merikoskelle</a></li>
 </ul></li>
-<li class="has-sub"><a href="03_harjoitus_3.html#harjoitus-2-teemakartta"><span class="toc-section-number">4</span> Harjoitus 2: Teemakartta</a>
+<li class="has-sub"><a href="03_harjoitus_3.html#harjoitus-3-teemakartta"><span class="toc-section-number">4</span> Harjoitus 3: Teemakartta</a>
 <ul>
 <li><a href="03_harjoitus_3.html#harjoituksen-sisältö-2"><span class="toc-section-number">4.1</span> Harjoituksen sisältö</a></li>
 <li><a href="03_harjoitus_3.html#harjoituksen-tavoite-2"><span class="toc-section-number">4.2</span> Harjoituksen tavoite</a></li>
@@ -130,32 +130,58 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <div id="harjoituksen-tavoite-4" class="section level2" number="6.2">
 <h2><span class="header-section-number">6.2</span> Harjoituksen tavoite</h2>
 <p>Koulutettava oppii luomaan karttalehtijaon ja tekemään sen pohjalta kartta-atlaksen.</p>
-<p>QGIS mahdollistaa myös kartta-atlaksen tekemisen. Kartta-atlas on ns. karttakirja, jonka avulla voidaan tuottaa automatisoidusti paljon karttoja samasta teemasta. Seuraavassa esimerkissä tuotamme kartta-atlaksen Oulusta, jossa jokainen karttalehti perustuu käyttäjän itse tekemään karttalehtijakoon.</p>
-<p>Avaa QGISin pääikkuna. Luo uusi väliaikainen luonnostaso, jonka tyyppi on polygoni. Nimeksi voit laittaa “Karttalehtijako”. Tasolle ei tarvitse lisätä uusia kenttiä, paina vain <strong>OK</strong>. Taso ilmestyy nyt tasovalikkoon ja siinä on editointitila päällä. Aloita uusien polygonien piirtäminen painamalla <img src="img/harjoitus5/img1.png" />. Piirrä eri puolille Oulua kolme suorakulmiota. Kun olet valmis, lopeta editointi klikkaamalla kynäikonia ja tallenna taso painamalla <img src="img/harjoitus5/img2.png" />.</p>
-<p>Avaa seuraavaksi uusi taitto. Voit antaa sen nimeksi Oulu_atlas.
+<p>QGIS mahdollistaa myös kartta-atlaksen tekemisen.
+Kartta-atlas on ns.
+karttakirja, jonka avulla voidaan tuottaa automatisoidusti paljon karttoja samasta teemasta.
+Seuraavassa esimerkissä tuotamme kartta-atlaksen Oulusta, jossa jokainen karttalehti perustuu käyttäjän itse tekemään karttalehtijakoon.</p>
+<p>Avaa QGISin pääikkuna.
+Luo uusi väliaikainen luonnostaso, jonka tyyppi on polygoni.
+Nimeksi voit laittaa “Karttalehtijako”.
+Tasolle ei tarvitse lisätä uusia kenttiä, paina vain <strong>OK</strong>.
+Taso ilmestyy nyt tasovalikkoon ja siinä on editointitila päällä.
+Aloita uusien polygonien piirtäminen painamalla <img src="img/harjoitus5/img1.png" />.
+Piirrä eri puolille Oulua kolme suorakulmiota.
+Kun olet valmis, lopeta editointi klikkaamalla kynäikonia ja tallenna taso painamalla <img src="img/harjoitus5/img2.png" />
+.</p>
+<p>Avaa seuraavaksi uusi taitto.
+Voit antaa sen nimeksi Oulu_atlas.
 Jätä tällä kertaa sivu vaakasuoraksi A4:ksi.</p>
-<p>Lisää tulosteelle kartta, johon piirtyvät karttaikkunassa näkyvät projektin tasot. Lisää otsikko, selite ja muut karttatulosteen graafiset tai kartografiset elementit (kuten logo tai pohjoisnuoli) totuttuun tapaan.</p>
-<p>Sitten aloitetaan kartta-atlaksen tuottaminen. Aktivoimme tulosteelle kartta-atlastilan oikean ominaisuuspalkin Atlaksen luonti-välilehdestä kuvan osoittamalla tavalla. Karttalehtijakotasoksi valitsemme tason, jonka alueisiin kartta-atlas perustuu. Tässä tapauksessa se on Uusi luonnostaso.</p>
+<p>Lisää tulosteelle kartta, johon piirtyvät karttaikkunassa näkyvät projektin tasot.
+Lisää otsikko, selite ja muut karttatulosteen graafiset tai kartografiset elementit (kuten logo tai pohjoisnuoli) totuttuun tapaan.</p>
+<p>Sitten aloitetaan kartta-atlaksen tuottaminen.
+Aktivoimme tulosteelle kartta-atlastilan oikean ominaisuuspalkin Atlaksen luonti-välilehdestä kuvan osoittamalla tavalla.
+Karttalehtijakotasoksi valitsemme tason, jonka alueisiin kartta-atlas perustuu.
+Tässä tapauksessa se on Uusi luonnostaso.</p>
 <p><img src="img/harjoitus5/img3.png" /></p>
-<p>Nyt vielä määritämme, että karttalehtijako ohjaa luomaamme karttakuvaa. Varmista, että kartta on valittuna valitsemalla se <strong>Valitse/Siirrä elementti</strong> <img src="img/harjoitus5/img4.png" />
--työkalulla vasemmasta työpalkista ja klikkaamalla kartta aktiiviseksi:
-Sen jälkeen valitse oikean puolen sivupalkissa <strong>Elementin ominaisuudet &gt; Atlas ohjaa tätä</strong>.
-<img src="img/harjoitus5/img5.png" /></p>
-<p>Voit määritellä myös marginaalin kohteen ympärille. Jos teet todella tarkkaa työtä, valitse marginaaliksi 0%, muussa tapauksessa se voi olla oletusarvoinen 10%.
+<p>Nyt vielä määritämme, että karttalehtijako ohjaa luomaamme karttakuvaa.
+Varmista, että kartta on valittuna valitsemalla se <strong>Valitse/Siirrä elementti</strong> <img src="img/harjoitus5/img4.png" /> -työkalulla vasemmasta työpalkista ja klikkaamalla kartta aktiiviseksi: Sen jälkeen valitse oikean puolen sivupalkissa <strong>Elementin ominaisuudet &gt; Atlas ohjaa tätä</strong>. <img src="img/harjoitus5/img5.png" /></p>
+<p>Voit määritellä myös marginaalin kohteen ympärille.
+Jos teet todella tarkkaa työtä, valitse marginaaliksi 0%, muussa tapauksessa se voi olla oletusarvoinen 10%.
 Tämän jälkeen voimme esikatsella kartta-atlastamme Esikatsele Atlasta -työkalulla (käyttöliittymän yläreunassa):</p>
 <p><img src="img/harjoitus5/img6.jpg" /></p>
-<p>Esikatselun avulla voit vilkaista, miltä kartta-atlas näyttäisi tulostaessa. Käytä nuolia esikatselutyöpalkista liikkuaksesi eri karttasivujen välillä. Huomaa, että voit tehdä samanaikaisesti muutoksia karttatulosteen tyyliasetuksiin tai vaikkapa tason luokitteluväreihin. Kiinnitä myös huomiota siihen, mitkä elementit muuttuvat karttasivuilla ja mitkä pysyvät samana.</p>
-<p>Jos haluat, voit lisätä tulosteeseen myös yleiskatsauskarttanäkymän, joka helpottaa kohteen sijainnin määrittämistä kartta-atlaksessa. Yleiskatsaus eli indeksikartta ilmaisee, millä alueella kartalla liikutaan. Lisää sitä varten tulosteeseen pienempi karttaikkuna, jota käytetään indeksikarttana. Valitse uuden karttaelementin <strong>Elementin omaisuudet</strong> -paneelista <strong>Yleiskatsaukset</strong> ja määritä asetukset. Voit myös muuttaa indeksikartan kehyksen tyylin.</p>
-<p><img src="img/harjoitus5/img7.jpg" /></p>
-<p>Kun olet valmis, voit tulostaa kartta-atlaksen Vie atlas kuvina -työkalulla. Huomaa, että jokaisesta kartta-atlaksen sivusta syntyy kuva, eli tulostamisessa voi kestää.</p>
+<p>Esikatselun avulla voit vilkaista, miltä kartta-atlas näyttäisi tulostaessa.
+Käytä nuolia esikatselutyöpalkista liikkuaksesi eri karttasivujen välillä.
+Huomaa, että voit tehdä samanaikaisesti muutoksia karttatulosteen tyyliasetuksiin tai vaikkapa tason luokitteluväreihin.
+Kiinnitä myös huomiota siihen, mitkä elementit muuttuvat karttasivuilla ja mitkä pysyvät samana.</p>
+<p>Jos haluat, voit lisätä tulosteeseen myös yleiskatsauskarttanäkymän, joka helpottaa kohteen sijainnin määrittämistä kartta-atlaksessa.
+Yleiskatsaus eli indeksikartta ilmaisee, millä alueella kartalla liikutaan.
+Lisää sitä varten tulosteeseen pienempi karttaikkuna, jota käytetään indeksikarttana.
+Valitse uuden karttaelementin <strong>Elementin omaisuudet</strong> -paneelista <strong>Yleiskatsaukset</strong> ja määritä asetukset.
+Voit myös muuttaa indeksikartan kehyksen tyylin.</p>
+<p><img src="img/harjoitus5/img7.png" /></p>
+<p>Kun olet valmis, voit tulostaa kartta-atlaksen Vie atlas kuvina -työkalulla.
+Huomaa, että jokaisesta kartta-atlaksen sivusta syntyy kuva, eli tulostamisessa voi kestää.</p>
 <p><img src="img/harjoitus5/img8.png" /></p>
-<p>Voit tulostaa atlaksen yksittäisinä kuvina tai yhteen tiedostoon PDF-formaatissa. Yhteen tiedostoon tallentaminen onnistuu aktivoimalla “Yhden tiedoston vienti jos mahdollista” -asetuksen Atlaksen luonti -välilehdessä:
-<img src="img/harjoitus5/img9.png" /></p>
+<p>Voit tulostaa atlaksen yksittäisinä kuvina tai yhteen tiedostoon PDF-formaatissa.
+Yhteen tiedostoon tallentaminen onnistuu aktivoimalla “Yhden tiedoston vienti jos mahdollista” -asetuksen Atlaksen luonti -välilehdessä: <img src="img/harjoitus5/img9.png" /></p>
 <p>Kartta-atlastuloste voisi näyttää esimerkiksi tältä:</p>
 <p><img src="img/harjoitus5/img10.png" /></p>
 <div class="note-box">
 <p>Vinkki!
-Voit myös lisätä dynaamista tekstiä kartta-atlakseen. Luo tekstikenttä ja klikkaa sen Elementin ominaisuudet -välilehdeltä “Dynaaminen teksti” -painiketta. Etsi avautuvasta valikosta esimerkiksi päivämäärä, kartta-atlaksen sivu ja kartta-atlaksen sivumäärä. QGIS tuo nämä tiedot lausekkeina tekstieditoriin, mutta näyttää lausekkeiden tuloksen taitossa.
+Voit myös lisätä dynaamista tekstiä kartta-atlakseen.
+Luo tekstikenttä ja klikkaa sen Elementin ominaisuudet -välilehdeltä “Dynaaminen teksti” -painiketta.
+Etsi avautuvasta valikosta esimerkiksi päivämäärä, kartta-atlaksen sivu ja kartta-atlaksen sivumäärä.
+QGIS tuo nämä tiedot lausekkeina tekstieditoriin, mutta näyttää lausekkeiden tuloksen taitossa.
 Kun olet valmis, tallenna projektitiedosto kurssihakemistoon pikanäppäimellä CTRL + T tai päävalikosta Projekti &gt; Tallenna.</p>
 </div>
 <div class="hint-box">
