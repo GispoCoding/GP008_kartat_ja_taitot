@@ -96,7 +96,7 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 </ul></li>
 <li><a href="02_harjoitus_2.html#lisätehtävä-luodaan-nimiö-merikoskelle"><span class="toc-section-number">3.4</span> Lisätehtävä: luodaan nimiö Merikoskelle</a></li>
 </ul></li>
-<li class="has-sub"><a href="03_harjoitus_3.html#harjoitus-2-teemakartta"><span class="toc-section-number">4</span> Harjoitus 2: Teemakartta</a>
+<li class="has-sub"><a href="03_harjoitus_3.html#harjoitus-3-teemakartta"><span class="toc-section-number">4</span> Harjoitus 3: Teemakartta</a>
 <ul>
 <li><a href="03_harjoitus_3.html#harjoituksen-sisältö-2"><span class="toc-section-number">4.1</span> Harjoituksen sisältö</a></li>
 <li><a href="03_harjoitus_3.html#harjoituksen-tavoite-2"><span class="toc-section-number">4.2</span> Harjoituksen tavoite</a></li>
@@ -140,9 +140,9 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <p><img src="img/harjoitus2/img2.png" /></p>
 <p>Seuraavaksi määritellään tarkemmin nimiöiden sijoittelu. Mene <strong>Sijoittaminen</strong>-välilehdelle. Aseta tilaksi jälleen “Seuraa viivaa”, jolloin nimiö pysyy viivan mukana myös kaarroksissa. Jos haluat nimiöt teiden sisälle, aseta “Sallitut asemoinnit” -kohtaan täppä “Viivalla”. Ota muut valinnat pois, jolloin QGIS sijoittaa nimiöt vain ja ainoastaan viivalle. Jos valitset tässä useamman vaihtoehdon, QGIS sijoittaa nimiön mihin tahansa niistä sen mukaan, mihin nimiö mahtuu.</p>
 <p><img src="img/harjoitus2/img3.png" /></p>
-<p>Seuraavaksi asetetaan jokaiselle tielle näkymään vain yksi nimiö, eli jokaisella tiellä lukee sen nimi vain kerran. Mene **Karttanäyttö*”**-välilehdelle, joka on Sijoittaminen-välilehden oikealla puolella. Rullaa valikkoa alaspäin, kunnes löydät kohdan “Yhdistä kytketyt viivat välttääksesi kopioidut nimiöt”.</p>
+<p>Seuraavaksi asetetaan jokaiselle tielle näkymään vain yksi nimiö, eli jokaisella tiellä lukee sen nimi vain kerran. Mene **Karttanäyttö*“**-välilehdelle, joka on Sijoittaminen-välilehden oikealla puolella. Rullaa valikkoa alaspäin, kunnes löydät kohdan”Yhdistä kytketyt viivat välttääksesi kopioidut nimiöt”.</p>
 <p><img src="img/harjoitus2/img4.png" /></p>
-<p>Jos fontti ei meinaa erottua taustasta, yksinkertainen kikka on käyttää valkoista väriä fontille ja luoda sille musta tekstivyöhyke. Palaa siis ensimmäiselle välilehdelle. Valitse fontin väriksi valkoinen (#ffffff) ja siirry sitten Vyöhyke-välilehdelle. Laita raksi kohtaan “Piirrä tekstivyöhyke”. Oletuksena vyöhykkeen väri on valkoinen, mutta vaihda se mustaksi. Tämän jälkeen voit muuttaa vyöhykkeen kokoa niin, että siitä tulee siisti reunaviiva fontille.</p>
+<p>Jos fontti ei meinaa erottua taustasta, yksinkertainen kikka on käyttää valkoista väriä fontille ja luoda sille musta tekstivyöhyke. Palaa siis ensimmäiselle välilehdelle. Valitse fontin väriksi valkoinen (#ffffff) ja siirry sitten Vyöhyke-välilehdelle. Laita raksi kohtaan “Piirrä tekstivyöhyke”. Oletuksena vyöhykkeen väri on valkoinen, mutta vaihda se mustaksi (#00000). Tämän jälkeen voit muuttaa vyöhykkeen kokoa niin, että siitä tulee siisti reunaviiva fontille.</p>
 <p><img src="img/harjoitus2/img15.png" /></p>
 <p>Katso mitä löytyy välilehdiltä “Maski” ja “Tausta”. Kokeile taustan ja maskin piirtämistä nimiöihin. Keksitkö näille jotain käyttötarkoitusta omassa työssäsi?</p>
 <div id="vaatekaupat-tason-nimiöinti" class="section level3" number="3.3.1">
@@ -153,18 +153,19 @@ type="button" onclick="navToggle()" aria-label="Toggle navigation">
 <p><img src="img/harjoitus2/img16.png" /></p>
 <p>Oletuksena QGISin sijoittelutila pistekohteiden nimiöille on <strong>Kartografinen</strong>. Tällöin QGIS pyrkii sijoittamaan nimiöt näkyviin automaattisesti kokeilemalla niitä eri puolille pistettä, alkaen ylhäältä oikealta suhteessa pisteeseen. Huono puoli tässä on se, että nimiöt voivat olla jollain mittakaavalla järkevästi näkyvillä, mutta muuttaa sitten paikkaa toisella.</p>
 <div class="hint-box">
-<p>Vinkki!
-QGISin oletusjärjestys sijoittelulle on ylös oikealle, ylös vasemmalle, alas oikealle, alas vasemmalle, keskelle oikealle, keskelle vasemmalle, ylös hieman oikealle ja ylös hieman vasemmalle. Tätä voidaan muokata lausekkeella kohdasta Position Priority &gt; Muokkaa. Ohessa myös esimerkkilauseke. Ohjeet lausekkeiden muodostamiseen löydät lausekeikkunan vasemmasta alalaidasta.</p>
+<p>Vinkki! QGISin oletusjärjestys sijoittelulle on ylös oikealle (<strong>TR</strong>), ylös vasemmalle (<strong>TL</strong>), alas oikealle (<strong>BR</strong>), alas vasemmalle (<strong>BL</strong>), keskelle oikealle (<strong>TR</strong>), keskelle vasemmalle (<strong>TL</strong>), ylös hieman oikealle (<strong>TSR</strong>) ja ylös hieman vasemmalle (<strong>TSL</strong>). Tätä voidaan muokata lausekkeella kohdasta Position Priority &gt; Muokkaa. Ohessa myös esimerkkilauseke. Ohjeet lausekkeiden muodostamiseen löydät lausekeikkunan vasemmasta alalaidasta.</p>
+<p><img src="img/harjoitus2/img6.png" /></p>
 </div>
-<p><img src="img/harjoitus2/img6.png" />
-<img src="img/harjoitus2/img7.png" /></p>
+<p><img src="img/harjoitus2/img7.png" /></p>
 <p>Seuraavaksi tarkastelemme, näkyvätkö kaikkien kohteiden nimiöt ja siirrämme niitä käsin paremmille paikoille. Etsi siis QGISin yläpalkista Nimiöiden työkalupalkki, joka näyttää tältä:</p>
 <p><img src="img/harjoitus2/img8.png" /></p>
-<p>Työkalupalkin toiminnot ovat järjestyksessä vasemmalta oikealle:
-Korosta kiinnitetyt kohteet, Näytä sijoittamattomat (näkymättömät) nimiöinnit, Kiinnitä/poista kiinnitys, Näytä/poista näkyvistä nimiöinti, Siirrä nimiöintiä, Kierrä nimiöintiä, Muokkaa nimiöinniin ominaisuuksia.</p>
+<p>Työkalupalkin toiminnot ovat järjestyksessä vasemmalta oikealle: <em>Korosta kiinnitetyt kohteet, Näytä sijoittamattomat (näkymättömät) nimiöinnit, Kiinnitä/poista kiinnitys, Näytä/poista näkyvistä nimiöinti, Siirrä nimiöintiä, Kierrä nimiöintiä, Muokkaa nimiöinnin ominaisuuksia.</em></p>
 <p>Aloita Nimiöiden työkalupalkin tutkiminen esimerkiksi siirtämällä joitain päällekkäisiä nimiöitä tai näyttämällä sijoittamattomat nimiöinnit. Kun aloitat nimiöiden käsin siirtämisen, QGIS kysyy sinulta mihin kenttään nämä tiedot sidotaan QGIS-projektin sisällä. Valitse “fid”-kenttä. fid on jokaisen kohteen uniikki ID-tunnus, jolloin kun muokkaat yhtä nimiötä, QGIS tallentaa tekemäsi muutokset vain tuohon yhteen kohteeseen. Jos valitsisit jonkin toisen kentän, jossa kahdella tai useammalla eri kohteella olisi sama arvo, yhteen kohteeseen tehdyt muutokset tulisivat voimaan kaikissa näissä kohteissa.</p>
+<div class="hint-box">
+<p>Jos aineistossa ei ole fid kenttää, voit luoda sen kentän arvojen laskimella käyttämällä muuttujaa <code>$id</code></p>
+</div>
 <p><img src="img/harjoitus2/img9.png" /></p>
-<p>Koita saada kaikkien kohteiden nimiöt näkyviin määrittämällä niille käsin jokin paikka. Kysy tarvittaessa kurssin pitäjältä lisätietoa työkalujen toimintaperiaatteista, tai pidä hiirtä hetki työkalun päällä, jolloin sen ohjeet tulevat näkyviin.</p>
+<p>Koita saada kaikkien kohteiden nimiöt näkyviin määrittämällä niille käsin jokin paikka. Kysy tarvittaessa kurssin kouluttajalta lisätietoa työkalujen toimintaperiaatteista, tai pidä hiirtä hetki työkalun päällä, jolloin työkalun vinkki tulee näkyviin.</p>
 <p>Kun olet valmis, jotkin nimiöt ovat saattaneet mennä hyvinkin kauas niistä kohteista, joihin ne liittyvät. Piirretään näihin vielä apuviivat selkeyttämään niiden lukemista. Mene Tason tyylit -paneelissa Nimiöt-välilehdelle, ja sieltä Osoitinviivat-välilehdelle. Laita täppä kohtaan “Piirrä osoitinviiva”. Oletuksena osoitinviiva tulee kaikkiin nimiöihin ja kohteisiin, mutta koita muuttaa “Minimipituus”-kohdan arvoa niin, että osoitinviiva tulee vain niiden nimiöiden ja kohteiden väliin, joilla on merkittävä välimatka toisiinsa nähden.</p>
 <p><img src="img/harjoitus2/img10.png" /></p>
 </div>
@@ -176,8 +177,7 @@ Korosta kiinnitetyt kohteet, Näytä sijoittamattomat (näkymättömät) nimiöi
 <p><img src="img/harjoitus2/img12.png" /></p>
 <p>Anna tason nimeksi Merikoski, geometriatyypiksi LineString ja koordinaattijärjestelmäksi Projektin koordinaattijärjestelmä (EPSG: 3067). Tämän jälkeen luo uusi kenttä, jonka nimi on “Nimi” ja tyyppi Tekstijono. Kun olet määrittänyt uuden kentän, paina “Lisää kenttälistaan”, jolloin se tulee kenttälistaan.</p>
 <p><img src="img/harjoitus2/img13.png" /></p>
-<p>Paina lopuksi OK.
-Seuraavaksi lisätään viiva uudelle tasolle. Klikkaa taso aktiiviseksi painamalla sitä kerran tasoluettelossa. Paina päälle tason editointitila painamalla kynäpainiketta. Aloita uuden viivakohteen digitointi painamalla Lisää viivakohde -ikonia.</p>
+<p>Paina lopuksi OK. Seuraavaksi lisätään viiva uudelle tasolle. Klikkaa taso aktiiviseksi painamalla sitä kerran tasoluettelossa. Paina päälle tason editointitila painamalla kynäpainiketta. Aloita uuden viivakohteen digitointi painamalla Lisää viivakohde -ikonia.</p>
 <p><img src="img/harjoitus2/img14.png" /></p>
 <p>Nyt klikkaile jokialueelle kaareva viiva siihen kohtaan, mihin haluat joen nimen tulevan. Lopeta digitointi painamalla hiiren oikeaa. Syötä avautuvaan ikkunaan nimen arvoksi “Merikoski”.</p>
 <p><img src="img/harjoitus2/img17.png" /></p>

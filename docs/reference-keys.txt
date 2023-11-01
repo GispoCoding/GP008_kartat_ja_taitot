@@ -23,7 +23,7 @@ harjoituksen-tavoite-1
 teiden-nimiöinti
 vaatekaupat-tason-nimiöinti
 lisätehtävä-luodaan-nimiö-merikoskelle
-harjoitus-2-teemakartta
+harjoitus-3-teemakartta
 harjoituksen-sisältö-2
 harjoituksen-tavoite-2
 lisätehtävä-wms-tason-visualisointi
